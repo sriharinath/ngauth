@@ -20,7 +20,7 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit() {
   }
-//comment
+//comment oplz
   registerUser() {
     this.userservice.registerUser(this.user).subscribe((res) => {
       console.log(res)
