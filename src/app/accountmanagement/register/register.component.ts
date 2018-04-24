@@ -24,6 +24,7 @@ export class RegisterComponent implements OnInit {
   registerUser() {
     this.userservice.registerUser(this.user).subscribe((res) => {
       console.log(res)
+      
       this.responseData = res;
       if (this.responseData.success) {
         this.clearInputs();
