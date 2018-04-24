@@ -1,0 +1,21 @@
+<div>
+  <h1>Register</h1>
+<mat-card>
+  <form class="example-form" novalidate (ngSubmit)="registerUser()" #loginform="ngForm">
+    <mat-form-field>
+      <input matInput type="text" name="name" [(ngModel)]="user.name" placeholder="Name">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <input matInput type="email" name="email" [(ngModel)]="user.email" placeholder="Email">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <input matInput type="password" name="password" [(ngModel)]="user.password" placeholder="Password">
+    </mat-form-field>
+    <br>
+    <button type="submit" mat-raised-button>Sign Up</button>
+    <a [routerLink]="['']">Login</a>
+  </form>
+</mat-card>
+</div>
